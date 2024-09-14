@@ -130,12 +130,14 @@ transition= {Bounce}/>
             </div>
           )}
         </motion.div>
-        <div className="flex flex-col blurbg rounded-xl w-full p-2 ">
+        <div className="flex flex-col blurbg rounded-xl gap-2 w-full p-2 ">
         <div className="w-full mb-6 underline underline-offset-8 decoration-[#ab8bde] ">
           <h1 className="text-2xl font-bold text-[#53279b]">{post.title}</h1>
         </div>
-        <div className="content-display">{parse(post.content)}</div>
+        <div className="content-display mb-1 ">{parse(post.content)}</div>
+        <h1 className="text-[1rem] font-bold text-[#53279b]">Created By :   <span className="text-[#745b9b] text-[1rem]">{post.username}</span></h1>
         </div>
+
         
       </Container>
       

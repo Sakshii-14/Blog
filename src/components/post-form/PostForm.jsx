@@ -12,6 +12,7 @@ import { useRef } from "react";
 
 
 
+
 function PostForm({ post }) {
   
   const { register, handleSubmit, watch, setValue, control, getValues } =
@@ -58,6 +59,7 @@ function PostForm({ post }) {
           const dbpost = await service.createPost({
             ...data,
             userId: userData.$id,
+            username:userData.name,
           });
           if (dbpost) {
             navigate(`/post/${dbpost.$id}`);
