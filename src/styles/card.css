@@ -1,0 +1,17 @@
+.overlay:hover .overlaydiv{
+transform: translateY(0);
+bottom: 0;
+}
+
+.overlay:hover h2{
+ color: ivory;
+}
+
+.blurbgimg {
+    backdrop-filter: blur(6px); 
+    background-color: rgba(169, 134, 227, 0.196); 
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.571); 
+  }
+  

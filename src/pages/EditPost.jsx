@@ -12,14 +12,14 @@ function EditPost() {
       if (Post) {
         setPost(Post);
       } else {
-        navigate("/");
+        navigate("/home");
       }
     });
   }, [slug, navigate]);
   return (
     <Container>
       {post ? (
-        <div>
+        <div className="py-8">
           <PostForm post={post} />
         </div>
       ) : null}

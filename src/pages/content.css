@@ -1,0 +1,30 @@
+
+.content-display h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+  }
+  
+  .content-display ol {
+    padding-left: 2rem;
+    list-style-type: decimal;
+  }
+  
+  .content-display ul {
+    padding-left: 2rem;
+    list-style-type: disc;
+  }
+  
+  .content-display li {
+    margin: 0.5rem 0;
+  }
+  
+.blurbg {
+  backdrop-filter: blur(6px); 
+  background-color: rgba(255, 255, 255, 0.082); 
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.365); 
+}
+
+  

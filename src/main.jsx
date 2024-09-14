@@ -13,9 +13,7 @@ import Post from './pages/Post.jsx'
 import EditPost from './pages/EditPost'
 import AllPosts from './pages/AllPosts'
 import AddPost from './pages/AddPost'
-
-
-
+import { AnimatePresence } from 'framer-motion';
 
 
 const router = createBrowserRouter([
@@ -78,9 +76,12 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Provider store={store}>
-    <RouterProvider router={router} />
-  </Provider>
+     <AnimatePresence mode='wait'>
+     <Provider store={store}>
+     <RouterProvider router={router} />
+     </Provider>
+     </AnimatePresence>
+    
   </React.StrictMode>
   
   
