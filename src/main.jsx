@@ -14,6 +14,7 @@ import EditPost from './pages/EditPost'
 import AllPosts from './pages/AllPosts'
 import AddPost from './pages/AddPost'
 import { AnimatePresence } from 'framer-motion';
+import UserPost from './pages/UserPost.jsx';
 
 
 const router = createBrowserRouter([
@@ -69,6 +70,10 @@ const router = createBrowserRouter([
       {
         path: "/post/:slug",
         element: <Post />,
+      },
+      {
+        path: "/userpost/:userid",
+        element: <UserPost />,
       },
     ],
   },
