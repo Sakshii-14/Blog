@@ -69,7 +69,7 @@ function PostForm({ post }) {
       loadingbarref.current.complete()
     } catch (error) 
     {
-      
+      notify(error);
       throw Error(error)
     }
   }
