@@ -7,8 +7,7 @@ import { login, logout } from "./store/authSlice";
 import { Outlet } from "react-router-dom";
 import { Header,Footer } from "./components/Index";
 import { useNavigate } from "react-router-dom";
-import bgimg from './bgimg.jpg';
-import bgimg2 from './bgimg1.jpg';
+
 
  
 export default function App() {
@@ -33,7 +32,7 @@ export default function App() {
   }, []);
 
   return !loading ? <div  className={`flex flex-col min-h-screen `} 
-  style={!authStatus ? { backgroundImage: `url(${bgimg})`, backgroundSize: 'cover', backgroundPosition: 'center' } : {backgroundImage: `url(${bgimg2})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
+  style={!authStatus ? { backgroundImage: 'url(/assets/bgimg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' } : {backgroundImage: 'url(/assets/bgimg1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center'}}>
     
     
     <Header></Header>
