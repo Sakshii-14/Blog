@@ -8,7 +8,7 @@ import Loader from "../components/Loader.jsx";
 
 
 function UserPost() {
-  const {userid} = useParams();
+  const {userid ,username} = useParams();
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false)
   
@@ -35,11 +35,12 @@ function UserPost() {
       className="w-full py-8 page"
     >
       <Container>
+        <p className="text-[#53279b] text-[1.5rem] font-medium mb-4">{username} 's Posts : </p>
         {
           loading ? (
             <Loader />
           ) : (
-            posts && posts.length > 0 ? (
+            posts  && posts.length > 0 ? (
               <motion.div  
                 initial={{ opacity: 0, x: -100 }}  
                 animate={{ opacity: 1, x: 0 }}     
@@ -55,6 +56,7 @@ function UserPost() {
                 }} 
                 className="flex flex-wrap gap-6"
               >
+
                 {posts.map((item) => (
                   <div key={item.$id} className="sm:w-[30%] w-full">
                     <PostCard {...item} />

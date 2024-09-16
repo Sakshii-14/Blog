@@ -135,7 +135,7 @@ transition= {Bounce}/>
           <h1 className="text-2xl font-bold text-[#53279b]">{post.title}</h1>
         </div>
         <div className="content-display mb-1 ">{parse(post.content)}</div>
-        <Link to={`/userpost/${post.userId}`}>
+        <Link to={`/userpost/${post.userId}/${post.username}`}>
         <h1 className="text-[1rem] font-bold text-[#53279b]">Created By :   <span className="text-[#745b9b] text-[1rem] hover:underline hover:underline-offset-2">{post.username}</span></h1>
         </Link>
         
