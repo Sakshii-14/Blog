@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   status: false,
   userData: null,
+  showPrompt:true,
 };
 
 const authSlice = createSlice({
@@ -17,8 +18,11 @@ const authSlice = createSlice({
       state.status = false;
       state.userData = null;
     },
+    promptDismiss:(state)=>{
+      state.showPrompt=false;
+    }
   },
 });
 
-export const { login, logout } = authSlice.actions;
+export const { login, logout,promptDismiss } = authSlice.actions;
 export default authSlice.reducer;

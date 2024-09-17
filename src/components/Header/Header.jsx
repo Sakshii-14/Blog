@@ -8,7 +8,7 @@ import hamicon from './burger-menu.png';
 import { useState } from "react";
 
 
-function Header() {
+function Header({onloginclick}) {
   const authStatus = useSelector((state) => state.auth.status);
   const navigate = useNavigate();
   const [menu, setmenu] = useState(false);
@@ -58,7 +58,10 @@ function Header() {
                 <li key={item.name}>
                   <button
                     className="inline-block  px-4 py-2 duration-200 bg-[#F7CACD]  rounded-xl glow-btn "
-                    onClick={() => navigate(item.slug)}
+                    onClick={item.name==='Login' || item.name==='Signup'  ? () =>{
+                      onloginclick()
+                      navigate(item.slug)
+                     } :()=>navigate(item.slug)}
                   >
                     {item.name}
                   </button>
@@ -83,7 +86,10 @@ function Header() {
                 <li key={item.name} className="w-full">
                   <button
                     className="inline-block w-full px-4 py-2 duration-200 bg-[#F7CACD]  rounded-xl glow-btn  "
-                    onClick={() => navigate(item.slug)}
+                    onClick={item.name==='Login' || item.name==='Signup'  ? () =>{
+                      onloginclick()
+                      navigate(item.slug)
+                     } :()=>navigate(item.slug)}
                   >
                     {item.name}
                   </button>
