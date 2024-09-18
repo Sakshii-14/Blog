@@ -33,7 +33,7 @@ export default function App() {
     
     <Header onloginclick={handleloginclick}></Header>
     
-    <div className="flex-1 relative">
+    <div className="flex-1 relative h-full w-full">
     {!authStatus && showprompt && (
           <motion.div initial={{ opacity: 0, x: -100 }}  
           animate={{ opacity: 1, x: 0 }}     

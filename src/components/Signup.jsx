@@ -57,7 +57,7 @@ function Signup() {
      stiffness: 150,  
      damping: 30,     
      duration: 0.7,   
-     delay: 0.2  ,mass:0.5, bounce:0.5}}  className="flex items-center justify-center w-full">
+     delay: 0.2  ,mass:0.5, bounce:0.5}}  className="flex items-center justify-center w-full md:mt-[7rem] sm:mt-[5rem]">
       <LoadingBar
         className='shadow-md rounded-xl'
         color='#D6C9F1'

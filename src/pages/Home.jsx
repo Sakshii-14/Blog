@@ -32,7 +32,7 @@ function Home() {
 
   return (
     <div className="w-full py-8 ">
-    <Container>
+    <Container className=" min-w-full">
       {loading ? (
         <Loader/>
       ) : (
@@ -47,9 +47,9 @@ function Home() {
               damping: 30,     
               duration: 0.7,   
               delay: 0.2  ,mass:0.5, bounce:0.5}} 
-            className="flex gap-6 flex-wrap ">
+            className="flex gap-6 flex-wrap w-full ">
               {posts.map((item) => (
-                <div key={item.$id} className=" sm:w-[30%] w-full ">
+                <div key={item.$id} className=" lg:w-[45%] md:w-[45%] sm:w-[40%] w-full">
                   <PostCard {...item} />
                 </div>
               ))}

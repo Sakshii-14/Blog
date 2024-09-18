@@ -34,7 +34,7 @@ function AllPosts() {
         mass: 0.5 }}
       className="w-full py-8 page"
     >
-      <Container>
+      <Container className=" min-w-full">
         {
           loading ? (
             <Loader />
@@ -56,7 +56,7 @@ function AllPosts() {
                 className="flex flex-wrap gap-6"
               >
                 {posts.map((item) => (
-                  <div key={item.$id} className="sm:w-[30%] w-full">
+                  <div key={item.$id} className="lg:w-[45%] md:w-[40%] sm:w-[30%] w-full">
                     <PostCard {...item} />
                   </div>
                 ))}

@@ -34,7 +34,7 @@ function UserPost() {
         mass: 0.5 }}
       className="w-full py-8 page"
     >
-      <Container>
+      <Container className=" min-w-full">
         <p className="text-[#53279b] text-[1.5rem] font-medium mb-4">{username} 's Posts : </p>
         {
           loading ? (

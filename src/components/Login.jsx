@@ -56,7 +56,7 @@ function Login() {
      stiffness: 150,  
      damping: 30,     
      duration: 0.7,   
-     delay: 0.2  ,mass:0.5, bounce:0.5}}  className="flex items-center justify-center w-full  ">
+     delay: 0.2  ,mass:0.5, bounce:0.5}}  className="flex items-center justify-center w-full md:mt-[7rem] sm:mt-[5rem] ">
       <LoadingBar
         className='shadow-md rounded-xl'
         color='#D6C9F1'
@@ -80,7 +80,7 @@ pauseOnHover
 theme="dark"
 transition= {Bounce}/>
       <div
-        className={`mx-auto w-full max-w-lg blur-bg rounded-xl p-10`}
+        className={`mx-auto w-full max-w-lg blur-bg rounded-xl p-10 `}
        >
         <div className="mb-2 flex justify-center">
           <span className="inline-block w-full max-w-[100px]">
