@@ -56,7 +56,7 @@ function Login() {
      stiffness: 150,  
      damping: 30,     
      duration: 0.7,   
-     delay: 0.2  ,mass:0.5, bounce:0.5}}  className="flex items-center justify-center w-full md:mt-[7rem] sm:mt-[3rem] ">
+     delay: 0.2  ,mass:0.5, bounce:0.5}}  className="flex items-center justify-center w-full lg:mt-[7rem] md:mt-[5rem] sm:mt-[3rem] ">
       <LoadingBar
         className='shadow-md rounded-xl'
         color='#D6C9F1'
