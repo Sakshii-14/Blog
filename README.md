@@ -1,4 +1,5 @@
 SoulScribe
+
 A dynamic blog platform that allows users to create and explore blog posts within a vibrant community. Built using modern web technologies, SoulScribe provides an intuitive and engaging interface for users to express themselves through written content.
 
 Features :
