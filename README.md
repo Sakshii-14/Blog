@@ -10,10 +10,10 @@ Features :
 - Interactive and dynamic UI/UX
   
 Tech Stack :
-Frontend: React, Redux Toolkit (for state management), React Router (for navigation), Tailwind CSS (for styling)
-Backend: Appwrite (BaaS)
-Editor: TinyMCE (Rich text editor)
-Deployment: Vercel 
+Frontend- React, Redux Toolkit (for state management), React Router (for navigation), Tailwind CSS (for styling)
+Backend- Appwrite (BaaS)
+Editor- TinyMCE (Rich text editor)
+Deployment- Vercel 
 
 Usage :
 1. Sign up or log in with your credentials.
